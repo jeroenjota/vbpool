@@ -1,0 +1,131 @@
+{
+  "poules":[
+    {
+      "code": "A",
+      "teams":
+      [
+        {
+          "number": "1",
+          "team": "Italië"
+        },
+        {
+          "number": "2",
+          "team": "Zwitserland"
+        },
+        {
+          "number": "3",
+          "team": "Turkije"
+        },
+        {
+          "number": "4",
+          "team": "Wales"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "teams":[
+        {
+          "number": 1,
+          "team": "België"
+        },
+        {
+          "number": 2,
+          "team": "Rusland"
+        },
+        {
+          "number": 3,
+          "team": "Denemarken"
+        },
+        {
+          "number": 4,
+          "team": "Finland"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "teams":[
+        {
+          "number": 1,
+          "team": "Oekraïne"
+        },
+        {
+          "number": 2,
+          "team": "Nederland"
+        },
+        {
+          "number": 3,
+          "team": "Oostenrijk"
+        },
+        {
+          "number": 4,
+          "team": "C4"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "teams":[
+        {
+          "number": 1,
+          "team": "Engeland"
+        },
+        {
+          "number": 2,
+          "team": "Kroatië"
+        },
+        {
+          "number": 3,
+          "team": "D3"
+        },
+        {
+          "number": 4,
+          "team": "Tsechië"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "teams":[
+        {
+          "number": 1,
+          "team": "Spanje"
+        },
+        {
+          "number": 2,
+          "team": "Zweden"
+        },
+        {
+          "number": 3,
+          "team": "Polen"
+        },
+        {
+          "number": 4,
+          "team": "E4"
+        }
+      ]
+    },
+    {
+      "code": "F",
+      "teams":[
+        {
+          "number": 1,
+          "team": "F1"
+        },
+        {
+          "number": 2,
+          "team": "Portugal"
+        },
+        {
+          "number": 3,
+          "team": "Frankrijk"
+        },
+        {
+          "number": 4,
+          "team": "Duitsland"
+        }
+      ]
+    }
+  ]
+}

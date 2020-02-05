@@ -1,0 +1,23 @@
+{
+  "name": "vbpool",
+  "version": "1.0.0",
+  "description": "Invoer module voor Voetbal pool",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jeroen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootswatch": "^4.4.1",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "npx": "^10.2.2",
+    "pug": "^2.0.3"
+  },
+  "devdependencies": {
+    "nodemon": "^1.19.0"
+  }
+}

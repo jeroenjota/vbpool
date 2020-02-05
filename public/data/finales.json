@@ -1,0 +1,79 @@
+{
+  "wedstrijden":[
+    {
+      "nr": 37,
+      "teamA": "2A",
+      "teamB": "2B"
+    },
+    {
+      "nr": 38,
+      "teamA": "1A",
+      "teamB": "2C"
+    },
+    {
+      "nr": 39,
+      "teamA": "1C",
+      "teamB": "3DEF"
+    },
+    {
+      "nr": 40,
+      "teamA": "1B",
+      "teamB": "3ADEF"
+    },
+    {
+      "nr": 41,
+      "teamA": "2D",
+      "teamB": "2E"
+    },
+    {
+      "nr": 42,
+      "teamA": "1F",
+      "teamB": "3ABC"
+    },
+    {
+      "nr": 43,
+      "teamA": "1D",
+      "teamB": "2F"
+    },
+    {
+      "nr": 44,
+      "teamA": "1E",
+      "teamB": "3ABCD"
+    },
+    {
+      "nr": 45,
+      "teamA": "W42",
+      "teamB": "W44"
+    },
+    {
+      "nr": 46,
+      "teamA": "W40",
+      "teamB": "W38"
+    },
+    {
+      "nr": 47,
+      "teamA": "W39",
+      "teamB": "W37"
+    },
+    {
+      "nr": 48,
+      "teamA": "W41",
+      "teamB": "W43"
+    },
+    {
+      "nr": 49,
+      "teamA": "W45",
+      "teamB": "W46"
+    },
+    {
+      "nr": 50,
+      "teamA": "W47",
+      "teamB": "W48"
+    },
+    {
+      "nr": 51,
+      "teamA": "W49",
+      "teamB": "W50"
+    }
+  ]
+}
