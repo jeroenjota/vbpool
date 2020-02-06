@@ -1,0 +1,48 @@
+h2.header Eindstand &nbsp;
+table.finals(width="100%")
+  tr
+    th(colspan="2") Eindstand
+    th(colspan="5") Topscorer  & aantal goals
+    th(colspan="2") Aantallen
+  tr
+    td(width="25%")
+      label 1e:
+        input(type="text" name=eindstand1)
+    td(width="4%")  (#{pnt.eindstand1})
+    td(width="25%")
+      label Naam:
+        input(type="text" name=topscorer)
+    td(width="4%") (#{pnt.topscorer}) 
+    td.right(width="4%") Goals
+    td.left(width="5%")
+      input(type="number" name=tsdp size="2")
+    td(width="2%") (#{pnt.tsdp})
+    td.right Gele kaarten (#{pnt.aantGeel})
+    td(width="5%")  
+      input(type="number" name=aantGeel)
+  tr
+    td
+      label 2e:
+        input(type="text" name=eindstand2)
+    td  (#{pnt.eindstand2})
+    td(colspan="3")
+    td.right(colspan="3") Rode kaarten (#{pnt.aantRood})
+    td.nr 
+      input(type="number" name=aantRood)
+    
+  tr
+    td(colspan="6")
+    td.right(colspan="2") Penalties(90min) (#{pnt.aantPens})
+    td.nr 
+      input(type="number" name=aantPens)
+  
+  tr
+    td(colspan="6")
+    td.right(colspan="2") Gelijkspel(90min)  (#{pnt.aantGelijk})
+    td.nr 
+      input(type="number" name=aantGelijk)
+  tr
+    td(colspan="6")
+    td.right(colspan="2") Doelpunten (#{pnt.aantDP})
+    td.nr 
+      input(type="number" name=aantDP)

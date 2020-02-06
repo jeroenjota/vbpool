@@ -28,19 +28,25 @@ html {
   padding: 0;
 }
 
-
+ul {
+  padding-left: 20px;
+  list-style: circle outside;
+}
 
 /* FONTS
    ========================================================================== */
 
 body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; /* [2] */
+  background-color: #badadf;
 }
 
 /* standard
    ========================================================================== */
 h2 {
+
 }
+
 
 
 /* Header
@@ -54,8 +60,18 @@ h2 {
   /* height: 50px; */
   background-color: #126e37;
   color: #FFFFFF;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
+
+.subheader{
+  background-color: #12606e;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 5px
+}
+
 
 .pagetitle {
   width: 100%;
@@ -91,25 +107,55 @@ h2 {
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
 }
+.group {
+  border-collapse: collapse;
+  border : 1px solid;
+  vertical-align: middle;
+}
 
 .group label {
   float: left;
   width: 90%;
   text-align: left;
   margin-right: 3px;
-  font-size: 110%
+  font-size: 120%;
+  padding-left: 4px;
 }
+
+.group, tr {
+  border : 1px solid;
+}
+
 .group input {
   float: right;
   width: 25%;
-  padding: 2px 4px;
+  /* padding: 2px 2px; */
   /* margin-left: 50px; */
 }
 .nr {
   width: 3%;
-  font-size: 70%;
+  font-size: 85%;
   text-align: right
 }
+
+.weds label {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-right: 3px;
+}
+
+.weds tr {
+  border-bottom: 1px solid black;
+}
+
+.weds input {
+  float: right;
+  width: 72%;
+  /* margin-left: 50px; */
+}
+
+
 .finals label {
   float: left;
   width: 100%;
@@ -121,8 +167,11 @@ h2 {
   width: 72%;
   /* margin-left: 50px; */
 }
-.finals th, .finals tr {
-  border-bottom: 1px solid
+
+.finals tr {
+  /* height: 12px; */
+  vertical-align: center;
+  border-bottom: 1px solid black;
 }
 
 .col4 {
@@ -133,25 +182,34 @@ h2 {
   grid-gap: 10px;
 }
 
+table{
+  border-collapse: seperate;
+  border-spacing: 2px;
+  border: 1px solid;
+}
 
+table, td, th {
+  border-bottom: 1px solid;
+}
 
 /* Profile Card
    ========================================================================== */
 
-.person {
+.center {
   text-align: center;
 }
 
-.person > * {
-  margin-bottom: 5px;
+.left {
+  text-align: left;
 }
 
-.person-image {
-  width: 100%;
-  height: 300px;
+.right {
+  text-align: right;
 }
 
-
+.small {
+  font-size : 70%;
+}
 
 /* Profile Page
    ========================================================================== */
@@ -181,12 +239,18 @@ h2 {
   margin-bottom: 20px;
 }
 
+input {
+  font-size :  100%
+}
 
 
 /* Buttons
    ========================================================================== */
 
 .button {
+  background-color: #126e37;
+  border-radius: 15px;
+  color: white;
   height: 50px;
   line-height: 50px;
   width: 100%;

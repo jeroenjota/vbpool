@@ -1,0 +1,62 @@
+h2.header Achtste finales &nbsp;
+  p.small (#{weds.punten.achtsteNaam} pnt voor elk genoemd team of #{weds.punten.achtstePlaats} pnt als ie ook op de goeie plaats staat)
+table.finals(width="100%")
+  tr.finals
+  each wed in weds.wedstrijden
+    if wed.soort === "Achtste finales"
+      td.nr #{wed.nr}:
+      td
+        label #{wed.naam1}:
+          input(type="text" name=wed.naam1)
+      td.nr vs
+      td 
+        label #{wed.naam2}:
+          input(type="text" name=wed.naam2)
+      if wed.nr%2 == 0
+        tr.finals
+h2.header Kwart finales  &nbsp;
+  p.small (#{weds.punten.kwartNaam} pnt voor elk genoemd team of #{weds.punten.kwartPlaats} pnt als ie ook op de goeie plaats staat)
+table.finals(width="100%")
+  tr
+  each wed in weds.wedstrijden
+    if wed.soort === "Kwart finales"
+      td.nr #{wed.nr}:
+      td
+        label #{wed.naam1}:
+          input(type="text" name=wed.naam1)
+      td.nr vs
+      td 
+        label #{wed.naam2}:
+          input(type="text" name=wed.naam2)
+      if wed.nr%2 == 0
+        tr
+h2.header Halve finales  &nbsp;
+  p.small (#{weds.punten.halveNaam} pnt voor elk genoemd team of #{weds.punten.halvePlaats} pnt als ie ook op de goeie plaats staat)
+table.finals(width="100%")
+  tr
+  each wed in weds.wedstrijden
+    if wed.soort === "Halve finales"
+      td.nr #{wed.nr}:
+      td
+        label #{wed.naam1}:
+          input(type="text" name=wed.naam1)
+      td.nr vs
+      td 
+        label #{wed.naam2}:
+          input(type="text" name=wed.naam2)
+      if wed.nr%2 == 0
+        tr
+h2.header Finale &nbsp;
+  p.small (#{pnt.finaleNaam} pnt voor elk genoemd team of #{pnt.finalePlaats} pnt als ie ook op de goeie plaats staat)
+table.finals(width="100%")
+  tr
+  each wed in weds.wedstrijden
+    if wed.soort == "Finale"
+      td.nr #{wed.nr}:
+      td
+        label #{wed.naam1}:
+          input(type="text" name=wed.naam1)
+      td.nr vs
+      td 
+        label #{wed.naam2}:
+          input(type="text" name=wed.naam2)

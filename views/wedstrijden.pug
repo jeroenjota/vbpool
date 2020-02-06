@@ -1,0 +1,35 @@
+h2.header Wedstrijden &nbsp;
+  p.small Juiste voorspelling Rust: #{pnt.rust} pnt, Eind: #{pnt.eind} pnt, Toto: #{pnt.toto} pnt, Aantal doelpunten vd dag: #{pnt.dpdag} pnt
+
+table.weds(width="100%")
+  each wed in weds.wedstrijden
+    -var datum = moment(wed.datum).format("ddd DD MMMM")
+    if soort != wed.soort
+      tr
+        th.subheader(colspan="10" style="text-align:left") #{wed.soort}
+      tr
+        th.center(width="3%") nr
+        th.left(width="10%") datum
+        th.left(width="8%") tijd
+        th.left(width="15%") plaats
+        th.left(width="25%") wedstrijd
+        th.center(colspan="2") rust
+        th.center(colspan="2") eind
+        th.center toto
+    tr
+      td.nr.center #{wed.nr}:
+      td.left #{datum}
+      td #{wed.tijd} 
+      td #[em #{wed.plaats}]
+      td #{wed.naam1} - #{wed.naam2}:
+      td
+        input(type="number" name="w" + wed.nr + "_r1")
+      td
+        input(type="number" name="w" + wed.nr + "_r2")
+      td
+        input(type="number" name="w" + wed.nr + "_e1")
+      td
+        input(type="number" name="w" + wed.nr + "_e2")
+      td
+        input(type="number" name="w" + wed.nr + "_tt")
+    -soort = wed.soort

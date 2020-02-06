@@ -1,7 +1,12 @@
 extends default
 
 block content
-  h3.person Vul de velden in en druk op de verzendknop
+  h3.center Vul de velden in en druk op de verzendknop
+
+  - var soort = ""
+  - var pnt
+  - pnt = weds.punten
+
   form(name="nameform" autocomplete="off")
     div.container
       p Naam:
@@ -12,27 +17,30 @@ block content
         input(type="email", name="email")
     div.maintext
       h2 Instructies
-      p Hieronder kun je voorspellingen voor het EK 2020 invullen. Als je alle vakjes hebt gehad kun je op verzenden drukken.
-      p Nadat het formulier bij de organisatie is aangekomen, wordt het daar afgedrukt. Je kunt het dan komen ophalen bij de bar en je inschrijfgeld betalen.
+      ul
+        li Hieronder kun je voorspellingen voor het EK 2020 invullen. Als je alle vakjes hebt gehad kun je op verzenden drukken.
+        li Nadat het formulier bij de organisatie is aangekomen, wordt het daar afgedrukt. Je kunt het dan komen ophalen bij de bar en je inschrijfgeld betalen.
+        li Voor elk juist ingevuld vakje krijg je punten.
+        li Aan het eind van elke wedstrijddag wordt de stand in het café opgehangen.
     div.maintext
       h2 Prijzen
-      h3 Per dag 
-      p zijn de volgende geldprijzen te winnen
-        ul
-          li Voor de meeste punten van de dag: € 2,50
-          li In de totaal stand bovenaan: € 1,00
-          li In de totaal stand onderaan: € 0,10
+      
+      p #[strong Per dag] zijn de volgende geldprijzen te winnen
+      ul
+        li Voor de meeste punten van de dag: € 2,50
+        li In de totaal stand bovenaan: € 1,00
+        li In de totaal stand onderaan: € 0,10
       p De punten voor de finale rondes tellen mee vanaf de dag dat de teams bekend worden.
       p De punten voor de eindstand, topscores en aantallen tellen op de laaste dag mee voor de dagprijs
-      h3 Aan het eind van het toernooi
-      p zijn de volgende geldprijzen te winnen
-        ul
-          li De laatste plaats krijgt zijn inleg terug
-          li De 4 hoogst geeindigde deelnemers krijgen respectievelijk 50%, 30%, 15% en 5% van de totale inleg 
-            br
-            | (minus de dagprijzen en de rode lantaarn)
-      p
-        em Bij gelijk aantal punten wordt de betreffende prijs verdeeld
-      br
-      
-      include groupfields
+      p #[strong Aan het eind van het toernooi] zijn de volgende geldprijzen te winnen
+      ul
+        li De laatste plaats krijgt zijn inleg terug.
+        li De 4 deelnemrs met de meeste punten krijgen respectievelijk 50%, 30%, 15% en 5% van de totale inleg (minus de dagprijzen en de rode lantaarn)
+      p #[em Bij gelijk aantal punten wordt de betreffende prijs verdeeld]
+      p Een paar dagen na het eind van het toernooi ligt er voor elke deelnemer een envelop klaar met het verdiende geld.
+      include wedstrijden
+      include groupstand
+      include finales
+      include eindstand
+      p.center
+        input.button(type="submit")
