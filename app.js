@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const pools = require('/home/jeroen/devellocal/vbpool/public/data/teams.json')
-const finweds = require('/home/jeroen/devellocal/vbpool/public/data/finales.json')
+const pools = require('./public/data/teams.json')
+const wedstrijden = require('./public/data/wedstrijden.json')
 
 app.set('view engine', 'pug');
 
@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res.render('index', {
     title: "Laurierboom Voetbalpool",
     pools: pools,
-    finales: finweds
+    weds: wedstrijden
   });
 })
 
