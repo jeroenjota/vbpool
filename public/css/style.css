@@ -1,266 +1,289 @@
-/* ==========================================================================
-   #STYLES
-   ========================================================================== */
-
+/**
+ * ==========================================================================
+ * #STYLES
+ * ==========================================================================
+ */
 
 /**
- *
  * [1]: Inheriting box sizing slightly better best-practice
  * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- *
  * [2]: WordPress System font-stack
  */
 
-
-/* RESET
-   ========================================================================== */
-
+/**
+ * RESET
+ * ==========================================================================
+ */
 
 html {
-  box-sizing: border-box;
+  box-sizing : border-box;
 }
 
-
-
-*, *::before, *::after {
-  box-sizing: inherit; /* [1] */
-  margin: 0;
-  padding: 0;
+*,
+*::after,
+*::before {
+  box-sizing : inherit;
+  margin     : 0;
+  padding    : 0;
+  /* [1] */
 }
 
 ul {
-  padding-left: 20px;
-  list-style: circle outside;
+  padding-left : 20px;
+  list-style   : circle outside;
 }
 
-/* FONTS
-   ========================================================================== */
+/**
+ * FONTS
+ * ==========================================================================
+ */
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; /* [2] */
-  background-color: #badadf;
+  background-color : #badadf;
+  font-family      : -apple-system,
+                     BlinkMacSystemFont,
+                     "Segoe UI",
+                     Roboto,
+                     Oxygen-Sans,
+                     Ubuntu,
+                     Cantarell,
+                     "Helvetica Neue",
+                     sans-serif;
+  /* [2] */
 }
 
-/* standard
-   ========================================================================== */
-h2 {
+/**
+ * standard
+ * ==========================================================================
+ */
 
-}
+h2 {}
 
-
-
-/* Header
-   ========================================================================== */
+/**
+ * Header
+ * ==========================================================================
+ */
 
 .header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display          : flex;
+  width            : 100%;
+  margin-top       : 10px;
+  margin-bottom    : 0px;
+  color            : #FFFFFF;
+  background-color : #126e37;
+  align-items      : center;
+  justify-content  : center;
   /* height: 50px; */
-  background-color: #126e37;
-  color: #FFFFFF;
-  margin-bottom: 0px;
-  margin-top: 10px;
 }
 
-.subheader{
-  background-color: #12606e;
-  color: #FFFFFF;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding: 5px
+.subheader {
+  margin-top       : 0px;
+  margin-bottom    : 0px;
+  padding          : 5px;
+  color            : #FFFFFF;
+  background-color : #12606e;
 }
-
 
 .pagetitle {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  background-color: #126e37;
-  color: #FFFFFF;
-  margin-bottom: 15px;
+  display          : flex;
+  width            : 100%;
+  height           : 80px;
+  margin-bottom    : 15px;
+  color            : #FFFFFF;
+  background-color : #126e37;
+  align-items      : center;
+  justify-content  : center;
 }
 
-/* Homepage Container
-   ========================================================================== */
+/**
+ * Homepage Container
+ * ==========================================================================
+ */
 
 .container {
-  width: 960px;
-  margin: 10px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  display               : grid;
+  width                 : 960px;
+  margin                : 10px auto;
+  grid-gap              : 20px;
+  grid-template-columns : repeat(3, 1fr);
 }
 
 .maintext {
-  width: 960px;
-  margin: 10px auto;
+  width  : 960px;
+  margin : 10px auto;
 }
 
 .col6 {
-  width: 960px;
-  margin: 10px auto;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
+  display               : grid;
+  width                 : 960px;
+  margin                : 10px auto;
+  grid-gap              : 10px;
+  grid-template-columns : repeat(6, 1fr);
 }
+
 .group {
-  border-collapse: collapse;
-  border : 1px solid;
-  vertical-align: middle;
+  border          : 1px solid;
+  border-collapse : collapse;
+  vertical-align  : middle;
 }
 
 .group label {
-  float: left;
-  width: 90%;
-  text-align: left;
-  margin-right: 3px;
-  font-size: 120%;
-  padding-left: 4px;
+  width        : 90%;
+  float        : left;
+  margin-right : 3px;
+  padding-left : 4px;
+  text-align   : left;
+  font-size    : 120%;
 }
 
-.group, tr {
+.group,
+tr {
   border : 1px solid;
 }
 
 .group input {
-  float: right;
-  width: 25%;
+  width : 25%;
+  float : right;
   /* padding: 2px 2px; */
   /* margin-left: 50px; */
 }
+
 .nr {
-  width: 3%;
-  font-size: 85%;
-  text-align: right
+  width      : 3%;
+  text-align : right;
+  font-size  : 85%;
 }
 
 .weds label {
-  float: left;
-  width: 100%;
-  text-align: center;
-  margin-right: 3px;
+  width        : 100%;
+  float        : left;
+  margin-right : 3px;
+  text-align   : center;
 }
 
 .weds tr {
-  border-bottom: 1px solid black;
+  border-bottom : 1px solid black;
 }
 
 .weds input {
-  float: right;
-  width: 72%;
+  width : 72%;
+  float : right;
   /* margin-left: 50px; */
 }
 
-
 .finals label {
-  float: left;
-  width: 100%;
-  text-align: center;
-  margin-right: 3px;
+  width        : 100%;
+  float        : left;
+  margin-right : 3px;
+  text-align   : center;
 }
+
 .finals input {
-  float: right;
-  width: 72%;
+  width : 72%;
+  float : right;
   /* margin-left: 50px; */
 }
 
 .finals tr {
   /* height: 12px; */
-  vertical-align: center;
-  border-bottom: 1px solid black;
+  border-bottom  : 1px solid black;
+  vertical-align : center;
 }
 
 .col4 {
-  width: 960px;
-  margin: 10px auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  display               : grid;
+  width                 : 960px;
+  margin                : 10px auto;
+  grid-gap              : 10px;
+  grid-template-columns : repeat(4, 1fr);
 }
 
-table{
-  border-collapse: seperate;
-  border-spacing: 2px;
-  border: 1px solid;
+table {
+  border          : 1px solid;
+  border-collapse : seperate;
+  border-spacing  : 2px;
 }
 
-table, td, th {
-  border-bottom: 1px solid;
+table,
+td,
+th {
+  border-bottom : 1px solid;
 }
 
-/* Profile Card
-   ========================================================================== */
+/**
+ * Profile Card
+ * ==========================================================================
+ */
 
 .center {
-  text-align: center;
+  text-align : center;
 }
 
 .left {
-  text-align: left;
+  text-align : left;
 }
 
 .right {
-  text-align: right;
+  text-align : right;
 }
 
 .small {
   font-size : 70%;
 }
 
-/* Profile Page
-   ========================================================================== */
+/**
+ * Profile Page
+ * ==========================================================================
+ */
 
 .profile {
-  display: flex;
-  height: 100vh;
-  width: 100%;
+  display : flex;
+  width   : 100%;
+  height  : 100vh;
 }
 
 .profile-image {
-  height: 100%;
-  flex-grow: 1;
-  flex-basis: 50%;
+  height     : 100%;
+  flex-basis : 50%;
+  flex-grow  : 1;
 }
 
 .profile-details {
-  flex-basis: 30%;
-  flex-grow: 1;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  display         : flex;
+  padding         : 50px;
+  flex-basis      : 30%;
+  flex-direction  : column;
+  flex-grow       : 1;
+  justify-content : center;
 }
 
 .profile-details > * {
-  margin-bottom: 20px;
+  margin-bottom : 20px;
 }
 
 input {
-  font-size :  100%
+  font-size : 100%;
 }
 
-
-/* Buttons
-   ========================================================================== */
+/**
+ * Buttons
+ * ==========================================================================
+ */
 
 .button {
-  background-color: #126e37;
-  border-radius: 15px;
-  color: white;
-  height: 50px;
-  line-height: 50px;
-  width: 100%;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20px
+  width            : 100%;
+  height           : 50px;
+  color            : white;
+  border-radius    : 15px;
+  background-color : #126e37;
+  text-align       : center;
+  text-decoration  : none;
+  font-size        : 20px;
+  line-height      : 50px;
 }
 
 .button-twitter {
-  color: #FFFFFF;
-  background-color: #659AF1;
-  border-radius: 5px;
+  color            : #FFFFFF;
+  border-radius    : 5px;
+  background-color : #659AF1;
 }
