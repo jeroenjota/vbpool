@@ -479,10 +479,10 @@
       "eindstand2": "36",
       "topscorer": "30",
       "tsdp":"12",
-      "aantGeel": "±4 / 20p",
-      "aantRood": "±2 / 20p",
-      "aantPens": "±1 / 20p",
-      "aantGelijk": "±1 / 20p",
-      "aantDP": "±5 / 20p"
+      "aantGeel": "±4; 20p",
+      "aantRood": "±2; 20p",
+      "aantPens": "±1; 20p",
+      "aantGelijk": "±1; 20p",
+      "aantDP": "±5; 20p"
     }
 }

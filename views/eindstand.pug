@@ -7,42 +7,42 @@ table.finals(width="100%")
   tr
     td(width="25%")
       label 1e:
-        input(type="text" name=eindstand1)
+        input(type="text" name="eindstand1")
     td(width="4%")  (#{pnt.eindstand1})
     td(width="25%")
       label Naam:
-        input(type="text" name=topscorer)
+        input(type="text" name="topscorer")
     td(width="4%") (#{pnt.topscorer}) 
     td.right(width="4%") Goals
     td.left(width="5%")
-      input(type="number" name=tsdp size="2" min="0")
+      input(type="number" name="tsdp" size="2" min="0")
     td(width="2%") (#{pnt.tsdp})
-    td.right Gele kaarten (#{pnt.aantGeel})
+    td.right Gele kaarten #[small (#{pnt.aantGeel})]
     td(width="10%")  
-      input(type="number" name=aantGeel min="0")
+      input(type="number" name="aantGeel" min="0")
   tr
     td
       label 2e:
-        input(type="text" name=eindstand2)
+        input(type="text" name="eindstand2")
     td  (#{pnt.eindstand2})
     td(colspan="3")
-    td.right(colspan="3") Rode kaarten (#{pnt.aantRood})
+    td.right(colspan="3") Rode kaarten #[small (#{pnt.aantRood})]
     td.nr 
-      input(type="number" name=aantRood min="0")
+      input(type="number" name="aantRood" min="0")
     
   tr
     td(colspan="6")
-    td.right(colspan="2") Penalties(90min) (#{pnt.aantPens})
+    td.right(colspan="2") Penalties(90min) #[small (#{pnt.aantPens})]
     td.nr 
-      input(type="number" name=aantPens min="0")
+      input(type="number" name="aantPens" min="0")
   
   tr
     td(colspan="6")
-    td.right(colspan="2") Gelijkspel(90min)  (#{pnt.aantGelijk})
+    td.right(colspan="2") Gelijkspel(90min)  #[small #{pnt.aantGelijk})]
     td.nr 
-      input(type="number" name=aantGelijk min="0")
+      input(type="number" name="aantGelijk" min="0")
   tr
     td(colspan="6")
-    td.right(colspan="2") Doelpunten (#{pnt.aantDP})
+    td.right(colspan="2") Doelpunten #[small (#{pnt.aantDP})]
     td.nr 
-      input(type="number" name=aantDP min="0")
+      input(type="number" name="aantDP" min="0")
