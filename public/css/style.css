@@ -257,7 +257,7 @@ th {
   justify-content : center;
 }
 
-.profile-details > * {
+.profile-details>* {
   margin-bottom : 20px;
 }
 
@@ -273,12 +273,13 @@ input {
 .button {
   width            : 100%;
   height           : 50px;
-  color            : white;
-  border-radius    : 15px;
-  background-color : #126e37;
+  color            : #1b2454;
+  border-radius    : 10px;
+  background-color : #9cb6e2;
   text-align       : center;
   text-decoration  : none;
   font-size        : 20px;
+  font-weight      : 800;
   line-height      : 50px;
 }
 
