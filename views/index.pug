@@ -7,14 +7,14 @@ block content
   - var pnt
   - pnt = weds.punten
 
-  form(name="nameform" autocomplete="off")
+  form(name="nameform" autocomplete="off" action="/submit" method="post")
     div.container
       p Naam:
         input(type="text", name="name")
       p email:
         input(type="email", name="email")
       p Telefoon:
-        input(type="email", name="email")
+        input(type="text", name="telefoon")
     div.maintext
       h2 Instructies
       ul

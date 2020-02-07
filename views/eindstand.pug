@@ -7,7 +7,9 @@ table.finals(width="100%")
   tr
     td(width="25%")
       label 1e:
-        input(type="text" name="eindstand1")
+        select(width="25%")
+          each team in teams
+            option= team
     td(width="4%")  (#{pnt.eindstand1})
     td(width="25%")
       label Naam:
@@ -23,7 +25,9 @@ table.finals(width="100%")
   tr
     td
       label 2e:
-        input(type="text" name="eindstand2")
+        select(width="25%")
+          each team in teams
+            option= team
     td  (#{pnt.eindstand2})
     td(colspan="3")
     td.right(colspan="3") Rode kaarten #[small (#{pnt.aantRood})]

@@ -1,3 +1,4 @@
+
 h2.header Achtste finales &nbsp;
   p.small (#{weds.punten.achtsteNaam} pnt voor elk genoemd team of #{weds.punten.achtstePlaats} pnt als ie ook op de goeie plaats staat)
 table.finals(width="100%")
@@ -7,11 +8,15 @@ table.finals(width="100%")
       td.nr #{wed.nr}:
       td
         label #{wed.naam1}:
-          input(type="text" name=wed.naam1)
+          select(width="25%")
+            each team in teams
+              option= team
       td.nr vs
       td 
         label #{wed.naam2}:
-          input(type="text" name=wed.naam2)
+          select(width="60px")
+            each team in teams
+              option= team
       if wed.nr%2 == 0
         tr.finals
 h2.header Kwart finales  &nbsp;
@@ -23,11 +28,15 @@ table.finals(width="100%")
       td.nr #{wed.nr}:
       td
         label #{wed.naam1}:
-          input(type="text" name=wed.naam1)
+          select(width="25%")
+            each team in teams
+              option= team
       td.nr vs
       td 
         label #{wed.naam2}:
-          input(type="text" name=wed.naam2)
+          select(width="25%")
+            each team in teams
+              option= team
       if wed.nr%2 == 0
         tr
 h2.header Halve finales  &nbsp;
@@ -39,11 +48,15 @@ table.finals(width="100%")
       td.nr #{wed.nr}:
       td
         label #{wed.naam1}:
-          input(type="text" name=wed.naam1)
+          select(width="25%")
+            each team in teams
+              option= team
       td.nr vs
       td 
         label #{wed.naam2}:
-          input(type="text" name=wed.naam2)
+          select(width="25%")
+            each team in teams
+              option= team
       if wed.nr%2 == 0
         tr
 h2.header Finale &nbsp;
@@ -55,8 +68,12 @@ table.finals(width="100%")
       td.nr #{wed.nr}:
       td
         label #{wed.naam1}:
-          input(type="text" name=wed.naam1)
+          select(width="25%")
+            each team in teams
+              option= team
       td.nr vs
       td 
         label #{wed.naam2}:
-          input(type="text" name=wed.naam2)
+          select(width="25%")
+            each team in teams
+              option= team

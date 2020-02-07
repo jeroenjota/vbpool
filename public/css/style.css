@@ -100,6 +100,12 @@ h2 {}
  * ==========================================================================
  */
 
+select {
+  width : 150px;
+  font-size: 110%;
+  margin: 2px;
+}
+
 .container {
   display               : grid;
   width                 : 960px;

@@ -15,7 +15,7 @@ table.weds(width="100%")
         th.left(width="25%") wedstrijd
         th.center(colspan="2") rust
         th.center(colspan="2") eind
-        th.center toto
+        th.center(width="5%") toto
     tr
       td.nr.center #{wed.nr}:
       td.left #{datum}
@@ -23,13 +23,13 @@ table.weds(width="100%")
       td #[em #{wed.plaats}]
       td #{wed.naam1} - #{wed.naam2}:
       td
-        input(type="number" name="w" + wed.nr + "_r1")
+        input.center(type="number" name="w" + wed.nr + "_r1" min="0" value="0")
       td
-        input(type="number" name="w" + wed.nr + "_r2")
+        input.center(type="number" name="w" + wed.nr + "_r2" min="0" value="0")
       td
-        input(type="number" name="w" + wed.nr + "_e1")
+        input.center(type="number" name="w" + wed.nr + "_e1" min="0" value="0")
       td
-        input(type="number" name="w" + wed.nr + "_e2")
+        input.center(type="number" name="w" + wed.nr + "_e2" min="0" value="0")
       td
-        input(type="number" name="w" + wed.nr + "_tt")
+        input.center(type="number" name="w" + wed.nr + "_tt" min="1" max="3" value="3")
     -soort = wed.soort
